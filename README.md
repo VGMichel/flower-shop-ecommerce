@@ -1,1 +1,1 @@
-# flower-shop-ecommerce
+# E-Commerce Flower Shop
