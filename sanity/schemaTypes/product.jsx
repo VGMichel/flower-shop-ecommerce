@@ -28,6 +28,17 @@ export default {
             title: 'Product Images',
             type: 'array',
             of: [{type: 'image'}]
+        },
+        {
+            name: 'specs',
+            title: 'Approx. Weight x Height',
+            type: 'string'
+        },
+        {
+            name: 'categories',
+            title: 'Categories',
+            type: 'array',
+            of: [{type: 'reference', to: {type: 'category'}}]
         }
     ]
 }
