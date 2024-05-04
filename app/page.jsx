@@ -1,5 +1,7 @@
-import Image from "next/image";
+import BestSellingFlowers from "@/components/BestSellingFlowers";
 
 export default function Home() {
-  return <main>Main</main>
+  return <main>
+    <BestSellingFlowers />
+  </main>
 }
