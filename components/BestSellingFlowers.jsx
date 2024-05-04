@@ -23,9 +23,12 @@ const getData = async ()=> {
 
 const BestSellingFlowers = async () => {
   const flowers = await getData();
-  console.log(flowers)
 
-  return <div>Best Selling Flowers</div>
+  return <section className="py-24">
+    <div className="container mx-auto">
+      <h2>Best Selling Bouquets</h2>
+    </div>
+  </section>
 
 }
 
