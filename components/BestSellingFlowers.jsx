@@ -1,4 +1,6 @@
 import { client } from "@/app/lib/sanity"
+import Link from 'next/link';
+import BestSellingCarousel from "./BestSellingCarousel";
 
 
 // Get Data
@@ -26,7 +28,12 @@ const BestSellingFlowers = async () => {
 
   return <section className="py-24">
     <div className="container mx-auto">
-      <h2>Best Selling Bouquets</h2>
+      <h2 className="text-center">Best Selling Bouquets</h2>
+      <p className="text-center mb-[30px]">Your Trusted Flower Shop, Where Every Petal Tells a Story</p>
+      <BestSellingCarousel flowers={flowers} />
+      <Link href="/our-flowers">
+        <button className="btn btn-accent mx-auto">See all bouquets</button>
+      </Link>
     </div>
   </section>
 
